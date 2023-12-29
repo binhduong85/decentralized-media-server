@@ -24,17 +24,17 @@
 
 # Decentralized Ultra-Low Latency Streaming Server
 
-A decentralized media server designed to handle media streaming at a global scale, making it suitable for large-scale applications but with minimal cost. It is designed with [SAN-I/O](https://sans-io.readthedocs.io/) in mind.
+A decentralized media server designed to handle media streaming on a global scale, making it suitable for large-scale applications but with minimal cost. It is designed with [SAN-I/O](https://sans-io.readthedocs.io/) in mind.
 
 [<img src="https://img.youtube.com/vi/QF8ZJq9xuSU/hqdefault.jpg"
 />](https://www.youtube.com/embed/QF8ZJq9xuSU)
 
 (Above is a demo video of the version used by Bluesea Network)
 
-## Features
+## Features benifits
   - 🚀 Powered by Rust with memory safety and performance.
   - High availability by being fully decentralized, with no central controller.
-  - 🛰️ Multi-zone support, high scalability.
+  - 🛰️ Private-zone & Multi-zone support, high scalability.
   - Support encodings: H264, Vp8, Vp9, H265 (Coming soon), AV1 (Coming soon)
   - Cross-platform: Linux, macOS, Windows.
   - Decentralized WebRTC SFU (Selective Forwarding Unit)
@@ -90,23 +90,23 @@ RTMP: `eyJhbGciOiJIUzI1NiJ9.eyJyb29tIjoiZGVtbyIsInBlZXIiOiJydG1wIiwicHJvdG9jb2wi
 
 SDK: `eyJhbGciOiJIUzI1NiJ9.eyJyb29tIjoiZGVtbyIsInBlZXIiOm51bGwsInByb3RvY29sIjoiV2VicnRjIiwicHVibGlzaCI6dHJ1ZSwic3Vic2NyaWJlIjp0cnVlLCJ0cyI6MTcwMzc1MjM1NTI2NH0.llwwbSwVTsyFgL_jYCdoPNVdOiC2jbtNb4uxxE-PU7A`
 
-Or create with token-generate api
+Or create with token-generated api
 
 ```
 atm0s-media-server --http-port 3100 token-generate
 ```
 
-After that access http://localhost:3100/ui/ to create token by your self, deault cluster token is `insecure`
+After that, you can access http://localhost:3100/ui/ to create a token by yourself. The default cluster token is `insecure`
 
 ### Start a webrtc node only
 
-For simple testing, we can start single node which support Webrtc for testing with Whip and Whep
+For simple testing, we can start a single node which supports Webrtc for testing with Whip and Whep
 
 ```
 atm0s-media-server --http-port 3200 webrtc
 ```
 
-After that we can access `http://localhost:3000/samples` to see all embeded samples
+After that, we can access `http://localhost:3000/samples` to see all embedded samples
 
 ### Start entire cluster
 
@@ -151,7 +151,7 @@ Third media-server: http://localhost:3003/samples/
 
 ![Demo Screen](./docs/imgs/demo-screen.jpg)
 
-Each node also expose a metric dashboard here:
+Each node also exposes a metric dashboard here:
 
 - Gateway: http://localhost:3000/dashboard/
 - Media1: http://localhost:3001/dashboard/
